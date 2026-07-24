@@ -38,7 +38,7 @@ def main(input_file, progress_bar=None, status_text=None):
 
         driver.get(link)
 
-        rating, rating_count = extract_rating(driver)
+        rating, rating_count = extract_rating(driver, link)
 
         results.append({
             "FG CODE": fg_code,
