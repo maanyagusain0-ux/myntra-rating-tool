@@ -13,7 +13,7 @@ def open_browser():
     options.add_argument("--window-size=1920,1080")
 
     driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()),
+        service=Service("/usr/bin/chromedriver"),
         options=options
     )
 
